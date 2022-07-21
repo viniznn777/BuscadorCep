@@ -1,0 +1,125 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./image/city.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    color: #f1f1f1;
+    font-size: 85px;
+    animation: rotate 2s alternate ease;
+    overflow-x: hidden;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-120vw)
+    }
+    50% {
+        transform: translateX(10vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.containerInput {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+.containerInput:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    margin-right: 8px;
+}
+.containerInput button {
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: apper 0.5s alternate ease-in-out;
+}
+
+@keyframes apper {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.containerInput button:hover {
+    transform: scale(1.2);
+}
+
+.containerInput input::placeholder {
+    color: #f1f1f1;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 8px;
+    width: 500px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px){
+    .title {
+        font-size: 60px;
+    }
+    .main h2 {
+        font-size: 28px;
+    }
+    .main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 292px) {
+    .containerInput {
+        width: 100%;
+    }
+    .containerInput input {
+        width: 80%;
+    }
+    .containerInput button {
+        width: 20%;
+    }
+    .title {
+        width: 100%;
+        font-size: 45px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cep/static/css/main.faa59f0c.css",
+    "main.js": "/cep/static/js/main.8824a4fa.js",
+    "static/media/city.jpg": "/cep/static/media/city.fc5a4718482f7e7ee402.jpg",
+    "index.html": "/cep/index.html",
+    "main.faa59f0c.css.map": "/cep/static/css/main.faa59f0c.css.map",
+    "main.8824a4fa.js.map": "/cep/static/js/main.8824a4fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.faa59f0c.css",
+    "static/js/main.8824a4fa.js"
+  ]
+}
